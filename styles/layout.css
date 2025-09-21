@@ -8,7 +8,7 @@
 
 main {
   overflow: auto;
-  padding: 4rem;
+  padding: 3rem;
 
   & .main-container {
     max-width: 33rem;

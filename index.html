@@ -28,6 +28,52 @@
             Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.
           </p>
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="child-info">
+              <legend>Informacao da Crianca</legend>
+
+              <div class="input-wrapper">
+                <label for="fullname">Nome Completo</label>
+                <input
+                  id="fullname"
+                  name="fullname"
+                  type="text"
+                  placeholder="Qual nonme da crianca"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <laber for="">Data de Nascimento</laber>
+                <input type="date" id="birth" name="birth" lang="pt-BR" />
+              </div>
+
+              <div class="select-wrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="female">Feminio</option>
+                  <option value="male">Masculino</option>
+                  <option value="na">Prefiro nao responder</option>
+                </select>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Informacoes Medicas</label>
+                <textarea
+                  name="medica-info"
+                  id="medical-info"
+                  cols="30"
+                  rows="10"
+                  placeholder="A crianca possui alguma condicao mefica que a escola deva estar ciente?"
+                ></textarea>
+              </div>
+
+              <div class="drop-area-drop">
+                <input type="file" id="birth-file" name="bith-file" />
+                <img src="assets/icons/cloud-upload.svg" alt="" />
+                <p>Clique aqui para <br> selcionar os arquivos</p>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
 
@@ -41,7 +87,10 @@
               ambiente acolhedor, seguro e estimulante.
             </p>
           </header>
-          <img src="assets/Illustration.svg" alt="professoras com criancas prestando atencao" />
+          <img
+            src="assets/Illustration.svg"
+            alt="professoras com criancas prestando atencao"
+          />
         </div>
       </aside>
     </div>
