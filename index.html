@@ -106,8 +106,7 @@
                   <input type="number" id="number" name="number" />
                 </div>
               </div>
-                <div class="flex">
-
+              <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="city">Cidade</label>
                   <input
@@ -129,6 +128,39 @@
                     disabled
                   />
                 </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="guardian">
+              <legend>Informacoes do Responsavel</legend>
+
+              <div class="input-wrapper">
+                <label for="guardian">Nome do Responsavel</label>
+                <input type="text" id="guardian" name="guardian" />
+                <small>Princial responsavel legal e contato de emergecia</small>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(81) 9 4192849182"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" required />
+              </div>
+
+              <div class="error">
+                <img
+                  src="assets/icons/alert-circle.svg"
+                  alt="icone de alerta"
+                />
+                <span>Insira e-mail valido</span>
               </div>
             </fieldset>
           </form>
