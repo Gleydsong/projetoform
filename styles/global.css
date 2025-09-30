@@ -8,6 +8,7 @@
   --font-family: "Poppins", sans-serif;
   --text: 400 1rem/1.5 var(--font-family);
   --text-sm: 400 0.875rem/1.4 var(--font-family);
+  --text-xs: 400 0.75rem/1.4 var(--font-family);
 
   --text-primary: #292524;
   --text-secondary: #57534e;
@@ -24,14 +25,16 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font: var(--text);
   color: var(--text-secondary);
 }
+
 h1,
 h2 {
   color: var(--text-primary);
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -39,6 +42,8 @@ img {
 
 .flex {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .flex-1 {
@@ -47,4 +52,12 @@ img {
 
 .flex-2 {
   flex: 2;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .flex {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
 }

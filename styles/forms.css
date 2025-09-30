@@ -1,29 +1,52 @@
 @import url(fields/index.css);
 
 form {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 fieldset {
   border: none;
-
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-
 legend {
-  font: 600 1rem/1.25 var(--font-family);
-  margin-bottom: 1.5rem;
+  font: 600 0.875rem/1.25 var(--font-family);
+  margin-bottom: 1rem;
 }
 
 fieldset + fieldset {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
-.action-wrapper {
-  margin-top: 3rem;
+.actions-wrapper {
+  margin-top: 2rem;
   display: flex;
+  flex-direction: column-reverse;
   gap: 1rem;
-  
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  form {
+    margin-top: 3rem;
+  }
+
+  fieldset {
+    gap: 1.5rem;
+  }
+
+  legend {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  fieldset + fieldset {
+    margin-top: 3rem;
+  }
+
+  .actions-wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
